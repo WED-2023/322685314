@@ -13,30 +13,43 @@
 <li><a href="#spa">Q&A</a></li>
 <li><a href="#contact">Contact Me</a></li>
 </div>
+
 <section id="about" class="section">
+  <br/>
+  <br/>
+  <br/>
+  <h2>
+    about me
+  </h2>
+  <div style="position: relative; text-align: center;">
+    <img src="Georgia_view.jpg" style="width: 40%;border: 5px solid rgb(26, 116, 8); border-radius: 15px;">
+    </div>
 <br/>
 <br/>
+<div class="sub-section">
+  <div class="sub-section-content">
+    <img src="hachapuri.jpg" class="sub-sction-img">
+      <h3>מאכלים</h3>
+      <p></p>
+  </div>
+</div>
+
+<div class="sub-section">
+  <h3>תרבות</h3>
+  <p>תיאור תרבות גרוזינית...</p>
+</div>
+
+<div class="sub-section">
+  <h3>שילוב תרבות ישראלית - גרוזינית</h3>
+  <p>תיאור השילוב של התרבויות...</p>
+</div>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
 <br/>
 <br/>
 <br/>
 </section>
 
-<section id="photos" class="sections">
+<section id="photos" class="section">
 <br/>
 <br/>
 <br/>
@@ -52,9 +65,9 @@ about me
 <br/>
 <br/>
 <br/>
-<br/>
+<h2>
 my photos
-<br/>
+</h2>
 <br/>
 <br/>
 </section>
@@ -75,78 +88,44 @@ my photos
 <br/>
 <br/>
 <br/>
-<br/>
+<h2>
 my playlist
-<br/>
-<br/>
-<br/>
+</h2>
+<div  style="text-align: center; margin-left: 5%; margin-top: 10%; margin-bottom: 0%;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tDBqLPSRWUc?si=1xw5aohFH4FWNMmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 </section>
 
 <section id="like" class="section">
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<h2>
 give me a like
-<br/>
-<br/>
-<br/>
+</h2>
+<div  style="text-align: center; margin-left: 5%; margin-top: 10%; margin-bottom: 0%;">
+<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwed-2023.github.io%2F322685314%2F&width=500&layout=standard&action=like&size=small&share=true&height=35&appId" width="500" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+</div>
 </section>
 
 <section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+<h2>
 scan my code
-<br/>
-<br/>
-<br/>
+</h2>
+<div style="position: relative; text-align: center;">
+  <img src="QR_CODE.png" style="margin-top:5%;">
+  <div style="position: absolute; top: 10px; left: 50%; transform: translateX(-50%); color: rgb(255, 255, 255); font-size: 30px; font-weight: bold;">
+     סרקו את הברקוד לפתיחת דף זה מכל מכשיר שתרצו
+  </div>
+</div>
 </section>
 
 <section id="spa" class="section">
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+<h2>
 ans
-<br/>
+</h2>
 <br/>
 <br/>
 </section>
@@ -167,9 +146,30 @@ ans
 <br/>
 <br/>
 <br/>
-<br/>
+<h2>
 contact me
-<br/>
+</h2>
+<form action="submit.php" method="post">
+  <label for="name">שם מלא:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">אימייל:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="message">מה תרצה לומר:</label>
+  <textarea id="message" name="message" rows="6" required></textarea>
+
+  <label for="feeling">הוסף רגש לסוף ההודעה:</label>
+  <input list="feelings" id="feeling" name="feeling" required>
+  <datalist id="feelings">
+      <option value="😀 שמח">
+      <option value="👍 לייק">
+      <option value="😂 צוחק">
+      <option value="❤️ אוהב">
+  </datalist>
+
+  <button type="submit">שלח</button>
+</form>
 <br/>
 <br/>
 </section>
