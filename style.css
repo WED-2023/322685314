@@ -9,7 +9,7 @@ body{
 	width: 100%;
 	height: 35px;
 	box-shadow: 0 4px 6px rgba(156, 95, 3, 0.1);
-	background-color: rgb(218, 116, 32);
+	background-color: hsl(27deg 75.52% 38.76% / 67.1%);
 	margin-top: 0.0%;
 	padding-top: 1%;
 	padding-bottom: 1%;
@@ -50,41 +50,56 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 50px;
+	font-size: 40px;
     font-weight: bold;
 	color: rgb(26, 116, 8);
-	background-color: rgb(218, 116, 32);
+	background-color: hsl(27deg 75.52% 38.76% / 67.1%);
 }
 
 /* design sub-sections */
 
 .sub-section {
 	display: flex;
-	align-items: center;
-	background: #a0522d;
+	align-items: stretch;
+	background: hsl(27deg 75.52% 38.76% / 67.1%);
 	margin: 20px auto;
 	padding: 15px;
 	border-radius: 10px;
-	max-width: 1500px;
+	max-width: 1250px;
 }
 
 .sub-section h3 {
 	color: #333;
 	font-size: 50px;
+	min-height: 50px;
+	text-align: center;
 }
 
 
 .sub-section img {
-	width: 450px;
-	height: 500px;
+	width: 400px;
+	height: 450px;
 	border-radius: 10px;
 	margin-left: 20px;
 }
+
+.image-text {
+	position:absolute;
+	top: 10px; /* מיקום הכיתוב מלמטה */
+	left: 50%;
+	transform: translateX(-50%);
+	background: rgba(0, 0, 0, 0.5); /* רקע שקוף */
+	color: white;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 5px;
+}
+
 .sub-section .text {
 	flex: 1;
 	text-align: right;
 	color: #333;
-	font-size: 25px;
+	font-size: 20px;
 }
 .sub-section .text:hover {
 	color: #c5c7c5bb;
@@ -110,22 +125,24 @@ body{
 
   .carousel-container img {
 	/* fixed size for each photo */
-	width: 800px; 
-	height: 600px; 
+	width: 650px; 
+	height: 450px; 
 	object-fit: cover;
 	border-radius: 10px;
 	scroll-snap-align: center; 
 	transition: transform 0.3s ease-in-out;
   }
 
-
+  .carousel-container img:hover{
+	transform: scale(1.1);
+  }
 
 /* style table for web differences */
 th, td {
     padding: 12px;
     border: 1px solid #000000;
     text-align: right; 
-	font-size: 30px;
+	font-size: 20px;
 	word-wrap: break-word; /* מאפשר לשבור את המילים למטה במקרה הצורך */
     max-width: 200px; /* הגבלת רוחב העמודה */
     white-space: normal; 
@@ -134,7 +151,7 @@ th, td {
 th {
     background-color: burlywood;
     font-weight: bold;
-	font-size: 35px;
+	font-size: 30px;
 }
 
 /* image style in use case 3 */
