@@ -1,8 +1,11 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/89IMDEJr)
 
 My website URL: https://wed-2023.github.io/322685314/
+
 My ID: 322685314
+
 Background for the website:
+
 האתר מוקדש לסיפורה של סבתי, לתחביביה ולמסע חייה. סבתי, עולה מגאורגיה, מהווה חלק בלתי נפרד מהמורשת התרבותית העשירה של העדה הגאורגית בישראל.
 
 הרעיון המרכזי, המשתקף הן בעיצוב הדף והן בתכניו, הוא להציג את התרבות הגאורגית ולספר את סיפורה של העלייה, המנהגים, הפולקלור המרתק, המאכלים המסורתיים והשירים הקלאסיים.
