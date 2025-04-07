@@ -213,47 +213,60 @@ ans
 <h2>
 contact me
 </h2>
-<form action="submit.php" method="post">
+<form id="contactForm">
   <label for="name">שם מלא:</label>
-  <input type="text" id="name" name="name" required>
+  <input type="text" id="name" name="name" required><br><br>
 
   <label for="email">אימייל:</label>
-  <input type="email" id="email" name="email" required>
+  <input type="email" id="email" name="email" required><br><br>
 
   <label for="message">מה תרצה לומר:</label>
-  <textarea id="message" name="message" rows="6" required></textarea>
+  <textarea id="message" name="message" rows="6" required></textarea><br><br>
 
   <label for="feeling">הוסף רגש לסוף ההודעה:</label>
   <input list="feelings" id="feeling" name="feeling" required>
   <datalist id="feelings">
-      <option value="😀 שמח">
-      <option value="👍 לייק">
-      <option value="😂 צוחק">
-      <option value="❤️ אוהב">
-  </datalist>
+    <option value="😀 שמח">
+    <option value="👍 לייק">
+    <option value="😂 צוחק">
+    <option value="❤️ אוהב">
+  </datalist><br><br>
 
-  <button type="submit" onclick="sent()">שלח</button>
-  <script>
-    function sent(){
-      alert("sent");
-    }    
-  </script>
+  <button type="submit">שלח</button>
 </form>
+
+<script type="text/javascript">
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+    const feeling = document.getElementById("feeling").value;
+
+    const emailSubject = encodeURIComponent("הודעה חדשה מהטופס");
+    const emailBody = encodeURIComponent(
+      `שם מלא: ${name}\nאימייל: ${email}\n\nהודעה:\n${message}\n\nרגש: ${feeling}`
+    );
+
+    window.location.href = `mailto:miralsh@post.bgu.ac.il?subject=${emailSubject}&body=${emailBody}`;
+  });
+</script>
 </section>
 
 
 <script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
+  $(function(){
+    $("#nav a").click(function(e){
+      e.preventDefault();
+      $('html,body').scrollTo(this.hash,this.hash); 
+    });
   });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
-</body>
-</html>
+  </script>
+  <script type="text/javascript">
+   $(document).scroll(function() {
+      $('#menu').toggle($(this).scrollTop()>1000)
+   });​
+   </script>
+  </body>
+  </html>
